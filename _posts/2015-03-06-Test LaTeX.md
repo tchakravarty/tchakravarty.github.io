@@ -6,6 +6,4 @@ categories: blog
 ---
 
 Here is an example of LaTeX being used on the site:
-$$
-a^2 + b^2 = c^2
-$$
+$$ a^2 + b^2 = c^2 $$
