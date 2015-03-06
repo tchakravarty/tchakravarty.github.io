@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Test Latex Installation"
+title:  "Test LaTeX Installation"
 date:   2015-03-06 00:29:38
 categories: blog
 ---
