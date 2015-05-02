@@ -3,9 +3,11 @@ title: "Experiments with Reference Classes in R"
 author: "Tirthankar Chakravarty"
 date: "1 May 2015"
 layout: post
+categories: [R]
 ---
 
-# Reference classes
+
+## Example 1
 Here is how you might create a Python class with a constructor and three methods:
 
 
@@ -80,6 +82,7 @@ myClass1$goodbye()
 ## Goodbye!
 {% endhighlight %}
 
+## Example 2
 Here is another example of the translation of a simple Python class to R's reference classes. First, the Python class:
 
 {% highlight python %}
@@ -109,8 +112,7 @@ class Circle:
   def calc_diameter(self):
     self.diameter = 2*self.radius
 {% endhighlight %}
-Questions:
-1. How can we instantiate the object when the `__init__` initialization function takes an argument `r` with no default?
+I am not sure why it is possible to instantiate the object with no arguments, when the `__init__` initialization function takes an argument `r` with no default?
 
 This can be translated to R's reference classes like so:
 
@@ -141,7 +143,7 @@ Then the radius of the object just created is `circle1$getradius()` (= 1). Let's
 
 Note that there is one difference from the Python implementation in that the `calc_diameter` method takes an optional `radius` argument, that updates the `radius` field and then computes the `diameter`.
 
-## Private and public fields
+## Encapsulation
 The next notion that most object-oriented programmers want to figure out is whether it is possible to encapsulate data, that is, make some of the data fields private so that they cannot be accessed or set from outside, i.e., not by a class method. In the current example, we can
 
 {% highlight r %}
@@ -180,6 +182,7 @@ circle1$radius
 {% endhighlight %}
 So, we can easily set the value of the diameter, and break the link between the radius and the diameter, which should be managed by the object itself. As of now, I have been unable to find any simple way of hiding certain fields from direct access. 
 
+## Mutability
 Another point to note, [as noted by Hadley](http://adv-r.had.co.nz/OO-essentials.html#rc), is that they are mutable, and they do not have the write-on-modify (that a new version of the object is created when copied) semantics that most R objects have:
 
 {% highlight r %}
@@ -189,7 +192,7 @@ pryr::address(circle1)
 
 
 {% highlight text %}
-## [1] "0x31ccbd0"
+## [1] "0x421e8a8"
 {% endhighlight %}
 
 
@@ -202,5 +205,5 @@ pryr::address(circle2)
 
 
 {% highlight text %}
-## [1] "0x31ccbd0"
+## [1] "0x421e8a8"
 {% endhighlight %}
