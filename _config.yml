@@ -11,8 +11,7 @@ github_username:  tchakravarty
 # Build settings
 markdown: kramdown
 
-
 comments :
-  provider : disqus
-  disqus :
-    short_name : tchakravarty
+  provider: disqus
+  disqus:
+    short_name: tchakravarty

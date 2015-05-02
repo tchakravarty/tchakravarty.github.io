@@ -8,7 +8,7 @@ categories: [R]
 
 
 ## Example 1
-Here is how you might create a Python class with a constructor and three methods:
+Here is how you might create a Python class with a constructor and two methods:
 
 
 {% highlight python %}
@@ -192,7 +192,7 @@ pryr::address(circle1)
 
 
 {% highlight text %}
-## [1] "0x421e8a8"
+## [1] "0x3717198"
 {% endhighlight %}
 
 
@@ -205,5 +205,5 @@ pryr::address(circle2)
 
 
 {% highlight text %}
-## [1] "0x421e8a8"
+## [1] "0x3717198"
 {% endhighlight %}
