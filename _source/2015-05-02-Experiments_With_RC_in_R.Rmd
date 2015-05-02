@@ -3,6 +3,7 @@ title: "Experiments with Reference Classes in R"
 author: "Tirthankar Chakravarty"
 date: "1 May 2015"
 layout: post
+categories: [R]
 ---
 ```{r, echo = FALSE, include = FALSE}
 library(methods)
