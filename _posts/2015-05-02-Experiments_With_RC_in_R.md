@@ -8,7 +8,8 @@ layout: post
 # Reference classes
 Here is how you might create a Python class with a constructor and three methods:
 
-```{python}
+
+{% highlight python %}
 class MyClass:
   def __init__(self, variable1 = 1, variable2 = 2):
     self.variable1 = variable1
@@ -19,7 +20,7 @@ class MyClass:
   
   def goodbye(self):
     return "Goodbye!"
-```
+{% endhighlight %}
 
 Based on the advice [here](http://stackoverflow.com/q/11561284/1414455), reference classes might be the best way to create objects using the same paradigm in R.  
 
@@ -80,7 +81,8 @@ myClass1$goodbye()
 {% endhighlight %}
 
 Here is another example of the translation of a simple Python class to R's reference classes. First, the Python class:
-``` {python}
+
+{% highlight python %}
 class Circle:
   radius = None
   diameter = None
@@ -106,7 +108,7 @@ class Circle:
   # value altering methods
   def calc_diameter(self):
     self.diameter = 2*self.radius
-```
+{% endhighlight %}
 Questions:
 1. How can we instantiate the object when the `__init__` initialization function takes an argument `r` with no default?
 
@@ -187,7 +189,7 @@ pryr::address(circle1)
 
 
 {% highlight text %}
-## [1] "0x1b7eed0"
+## [1] "0x31ccbd0"
 {% endhighlight %}
 
 
@@ -200,5 +202,5 @@ pryr::address(circle2)
 
 
 {% highlight text %}
-## [1] "0x1b7eed0"
+## [1] "0x31ccbd0"
 {% endhighlight %}
