@@ -10,7 +10,7 @@ library(methods)
 ```
 
 ## Example 1
-Here is how you might create a Python class with a constructor and three methods:
+Here is how you might create a Python class with a constructor and two methods:
 
 ```{python}
 class MyClass:
