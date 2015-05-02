@@ -4,6 +4,7 @@ author: "Tirthankar Chakravarty"
 date: "1 May 2015"
 layout: post
 categories: [R]
+comments: true
 ---
 ```{r, echo = FALSE, include = FALSE}
 library(methods)

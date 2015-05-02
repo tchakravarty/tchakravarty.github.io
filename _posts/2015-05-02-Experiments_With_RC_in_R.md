@@ -4,6 +4,7 @@ author: "Tirthankar Chakravarty"
 date: "1 May 2015"
 layout: post
 categories: [R]
+comments: true
 ---
 
 
@@ -192,7 +193,7 @@ pryr::address(circle1)
 
 
 {% highlight text %}
-## [1] "0x3717198"
+## [1] "0x2d25ce0"
 {% endhighlight %}
 
 
@@ -205,5 +206,5 @@ pryr::address(circle2)
 
 
 {% highlight text %}
-## [1] "0x3717198"
+## [1] "0x2d25ce0"
 {% endhighlight %}
