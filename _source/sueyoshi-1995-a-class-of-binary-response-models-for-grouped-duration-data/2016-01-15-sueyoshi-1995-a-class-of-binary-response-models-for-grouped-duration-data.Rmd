@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Sueyoshi (1995): A Class of Binary Response Models for Grouped Duration Data"
+date: `r Sys.time()`
+published: true
+tags: [econometrics]
+---
+
+Narrow replication of [Sueyoshi (1995)](http://onlinelibrary.wiley.com/doi/10.1002/jae.3950100406/abstract).  
